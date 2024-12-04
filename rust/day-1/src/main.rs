@@ -2,16 +2,6 @@ use crate::utils::{input_file, parse};
 
 mod utils;
 
-fn main() {
-	let file = input_file();
-
-	let part_one_solution = part_one(&file);
-	let part_two_solution = part_two(&file);
-
-	println!("Part 1: {}", part_one_solution);
-	println!("Part 2: {}", part_two_solution);
-}
-
 fn part_one(input: &str) -> i64 {
 	let (mut left_column, mut right_column) = parse(input);
 
@@ -47,4 +37,14 @@ fn part_two(input: &str) -> i64 {
 	}
 
 	similarity
+}
+
+fn main() {
+	let file = input_file();
+
+	let part_one_solution = part_one(&file);
+	let part_two_solution = part_two(&file);
+
+	println!("Part 1: {}", part_one_solution);
+	println!("Part 2: {}", part_two_solution);
 }
