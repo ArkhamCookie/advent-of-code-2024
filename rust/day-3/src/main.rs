@@ -1,3 +1,9 @@
+use utils::input_file;
+
+mod utils;
+
 fn main() {
-    println!("Hello, world!");
+	let file = input_file();
+
+	println!("File: {}", file);
 }
