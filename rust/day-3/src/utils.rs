@@ -35,7 +35,6 @@ pub(crate) fn parse(input: &str) -> Vec<(&str, &str)> {
 }
 
 pub(crate) fn sum_mul(input: Vec<(&str, &str)>) -> i64 {
-	// let results: Vec<(&str, &str)> = parse(input);
 	let mut output = 0;
 
 	#[allow(clippy::needless_range_loop)] // Required for tuple
