@@ -1,4 +1,6 @@
-use crate::utils::{input_file, parse};
+use crate::utils::parse;
+
+use shared::input_file;
 
 mod utils;
 

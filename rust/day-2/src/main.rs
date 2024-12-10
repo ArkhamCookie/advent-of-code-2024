@@ -1,4 +1,6 @@
-use utils::{difference, input_file, parse};
+use utils::{difference, parse};
+
+use shared::input_file;
 
 mod utils;
 

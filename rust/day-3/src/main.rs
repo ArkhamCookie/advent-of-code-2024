@@ -1,4 +1,6 @@
-use utils::{input_file, parse, sum_mul};
+use utils::{parse, sum_mul};
+
+use shared::input_file;
 
 mod utils;
 
