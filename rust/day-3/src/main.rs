@@ -1,21 +1,11 @@
-use utils::{input_file, parse};
+use utils::{input_file, parse, sum_mul};
 
 mod utils;
 
 fn part_one(input: &str) -> i64 {
-	let results: Vec<(&str, &str)> = parse(input);
-	let mut output = 0;
+	let parsed = parse(input);
 
-	#[allow(clippy::needless_range_loop)] // Required for tuple
-	for i in 0..results.len() {
-		let (num1, num2) = results[i];
-		let num1: i64 = num1.parse().unwrap();
-		let num2: i64 = num2.parse().unwrap();
-
-		output += num1 * num2;
-	}
-
-	output
+	sum_mul(parsed)
 }
 
 fn main() {
